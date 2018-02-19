@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+    <title>Cities</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+<body>
+<div class="row">
+    <section id="user" class="answer-field left-field"></section>
+    <section id="common">
+        <form action="" id="game">
+            <label id="gameAction" for="city"></label>
+            <input type="text" required id="city">
+            <button type="submit">Отвечаю</button>
+            <span class="error_message"></span>
+        </form>
+        <button id="speech">Talk</button>
+        <button id='gameOver'>Сдаюсь!</button>
+    </section>
+    <section id="pc" class="answer-field right-field"></section>
+</div>
+<div class="row">
+    <div id="map" style="width:400px; height:300px"></div>
+</div>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="cities.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
